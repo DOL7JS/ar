@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+    defaultConfig {
+        applicationId "com.example.arcorebaka"
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.7.0"
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+
+
+
+sceneform.asset('sampledata/batarang/batarang.gltf',
+        'default',
+        'sampledata/batarang/batarang.sfa',
+        'src/main/res/raw/batarang')
+
+sceneform.asset('sampledata/hulk/hulk.gltf',
+        'default',
+        'sampledata/hulk/hulk.sfa',
+        'src/main/res/raw/hulk')
+
+sceneform.asset('sampledata/iron_man/iron_man.gltf',
+        'default',
+        'sampledata/iron_man/iron_man.sfa',
+        'src/main/res/raw/iron_man')
+
+sceneform.asset('sampledata/spiderman/spiderman.gltf',
+        'default',
+        'sampledata/spiderman/spiderman.sfa',
+        'src/main/res/raw/spiderman')
+
+
+sceneform.asset('sampledata/black_panther_necklace/black_panther_necklace.gltf',
+        'default',
+        'sampledata/black_panther_necklace/black_panther_necklace.sfa',
+        'src/main/res/raw/black_panther_necklace')
+
+sceneform.asset('sampledata/captain_america_shield/captain_america_shield.gltf',
+        'default',
+        'sampledata/captain_america_shield/captain_america_shield.sfa',
+        'src/main/res/raw/captain_america_shield')
+
+sceneform.asset('sampledata/captain_marvel/captain_marvel.gltf',
+        'default',
+        'sampledata/captain_marvel/captain_marvel.sfa',
+        'src/main/res/raw/captain_marvel')
+
+sceneform.asset('sampledata/black_panther/black_panther.gltf',
+        'default',
+        'sampledata/black_panther/black_panther.sfa',
+        'src/main/res/raw/black_panther')
+
+sceneform.asset('sampledata/mjolnir/mjolnir.gltf',
+        'default',
+        'sampledata/mjolnir/mjolnir.sfa',
+        'src/main/res/raw/mjolnir')
+
+
+sceneform.asset('sampledata/shazam/shazam.gltf',
+        'default',
+        'sampledata/shazam/shazam.sfa',
+        'src/main/res/raw/shazam')
+
+sceneform.asset('sampledata/strom_breaker/storm_breaker.gltf',
+        'default',
+        'sampledata/strom_breaker/storm_breaker.sfa',
+        'src/main/res/raw/storm_breaker')
+
+sceneform.asset('sampledata/spider_gwen/spider_gwen.gltf',
+        'default',
+        'sampledata/spider_gwen/spider_gwen.sfa',
+        'src/main/res/raw/spider_gwen')
+
+sceneform.asset('sampledata/captain_america/captain_america.gltf',
+        'default',
+        'sampledata/captain_america/captain_america.sfa',
+        'src/main/res/raw/captain_america')
+
+
+sceneform.asset('sampledata/star_lord_helmet/star_lord_helmet.gltf',
+        'default',
+        'sampledata/star_lord_helmet/star_lord_helmet.sfa',
+        'src/main/res/raw/star_lord_helmet')
+
+
+sceneform.asset('sampledata/superman/superman.gltf',
+        'default',
+        'sampledata/superman/superman.sfa',
+        'src/main/res/raw/superman')
+
+sceneform.asset('sampledata/batman/batman.gltf',
+        'default',
+        'sampledata/batman/batman.sfa',
+        'src/main/res/raw/batman')

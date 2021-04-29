@@ -1,0 +1,103 @@
+{
+  materials: [
+    {
+      name: 'defaultMat',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'defaultMat_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'defaultMat_normal',
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 1,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: 'defaultMat_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/captain_america_shield/captain_america_shield.gltf',
+    name: 'captain_america_shield',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/captain_america_shield\\textures\\defaultMat_baseColor.jpg',
+      name: 'defaultMat_baseColor',
+      pipeline_name: 'textures/defaultMat_baseColor.jpg',
+    },
+    {
+      file: 'sampledata/captain_america_shield\\textures\\defaultMat_metallicRoughness.png',
+      name: 'defaultMat_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures/defaultMat_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/captain_america_shield\\textures\\defaultMat_normal.png',
+      name: 'defaultMat_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/defaultMat_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}
