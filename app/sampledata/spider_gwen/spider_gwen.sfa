@@ -1,0 +1,88 @@
+{
+  materials: [
+    {
+      name: 'Material__35',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Material__35_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.59999999999999998,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/spider_gwen/spider_gwen.gltf',
+    name: 'spider_gwen',
+    recenter: 'root',
+    scale: 0.057472000000000002,
+  },
+  samplers: [
+    {
+      file: 'sampledata/spider_gwen\\textures\\Material__35_baseColor.png',
+      name: 'Material__35_baseColor',
+      pipeline_name: 'textures/Material__35_baseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}

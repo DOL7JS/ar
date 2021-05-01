@@ -1,0 +1,88 @@
+{
+  materials: [
+    {
+      name: 'Group_1_Merged_Material',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Group_1_Merged_Material_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0.31878800000000002,
+        },
+        {
+          roughnessFactor: 0.187309,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/strom_breaker/storm_breaker.gltf',
+    name: 'storm_breaker',
+    recenter: 'root',
+    scale: 0.0093449999999999991,
+  },
+  samplers: [
+    {
+      file: 'sampledata/strom_breaker\\textures\\Group_1_Merged_Material_baseColor.png',
+      name: 'Group_1_Merged_Material_baseColor',
+      pipeline_name: 'textures/Group_1_Merged_Material_baseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}

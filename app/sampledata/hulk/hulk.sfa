@@ -1,0 +1,241 @@
+{
+  materials: [
+    {
+      name: '40_mesh3_0_0_0',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: '40_mesh3_0_0_0_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 0.59999999999999998,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: '40_mesh3_0_0_0_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: '41_mesh1_0_0_0_root_root',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: '41_mesh1_0_0_0_root_root_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 1,
+        },
+        {
+          roughnessFactor: 0.59999999999999998,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: '41_mesh1_0_0_0_root_root_metallicRoughness',
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: '41_mesh2_0_0_0',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: '41_mesh2_0_0_0_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: null,
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.59999999999999998,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/hulk/hulk.gltf',
+    name: 'hulk',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/hulk\\textures_hulk\\40_mesh3_0_0_0_baseColor.png',
+      name: '40_mesh3_0_0_0_baseColor',
+      pipeline_name: 'textures_hulk/40_mesh3_0_0_0_baseColor.png',
+    },
+    {
+      file: 'sampledata/hulk\\textures_hulk\\40_mesh3_0_0_0_metallicRoughness.png',
+      name: '40_mesh3_0_0_0_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures_hulk/40_mesh3_0_0_0_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/hulk\\textures_hulk\\41_mesh1_0_0_0_root_root_baseColor.png',
+      name: '41_mesh1_0_0_0_root_root_baseColor',
+      pipeline_name: 'textures_hulk/41_mesh1_0_0_0_root_root_baseColor.png',
+    },
+    {
+      file: 'sampledata/hulk\\textures_hulk\\41_mesh1_0_0_0_root_root_metallicRoughness.png',
+      name: '41_mesh1_0_0_0_root_root_metallicRoughness',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'textures_hulk/41_mesh1_0_0_0_root_root_metallicRoughness.png',
+    },
+    {
+      file: 'sampledata/hulk\\textures_hulk\\41_mesh2_0_0_0_baseColor.png',
+      name: '41_mesh2_0_0_0_baseColor',
+      pipeline_name: 'textures_hulk/41_mesh2_0_0_0_baseColor.png',
+    },
+  ],
+  version: '0.54:2',
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	SHAZAM! (Movie Version)
+* source:	https://sketchfab.com/3d-models/shazam-movie-version-b74c59da4e4f48e89ffb490628b02a3d
+* author:	EWTube0 (https://sketchfab.com/EWTube0)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "SHAZAM! (Movie Version)" (https://sketchfab.com/3d-models/shazam-movie-version-b74c59da4e4f48e89ffb490628b02a3d) by EWTube0 (https://sketchfab.com/EWTube0) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

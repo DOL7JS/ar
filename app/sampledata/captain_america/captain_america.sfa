@@ -1,0 +1,558 @@
+{
+  materials: [
+    {
+      name: 'Lashes',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Lashes_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Lashes_normal',
+        },
+        {
+          metallicFactor: 0.050000000000000003,
+        },
+        {
+          roughnessFactor: 0.95243199999999995,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'Face',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Face_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Face_normal',
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.35436000000000001,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'material',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'material_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'material_normal',
+        },
+        {
+          metallicFactor: 0.050000000000000003,
+        },
+        {
+          roughnessFactor: 0.047567999999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'Lower_Body',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Lower_Body_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Lower_Body_normal',
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.37260100000000002,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'Helmet',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Helmet_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Helmet_normal',
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.047567999999999999,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'Upper_Body',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Upper_Body_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Upper_Body_normal',
+        },
+        {
+          metallicFactor: 0,
+        },
+        {
+          roughnessFactor: 0.34827999999999998,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+    {
+      name: 'Teeth',
+      parameters: [
+        {
+          baseColorFactor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColor: 'Teeth_baseColor',
+        },
+        {
+          diffuseColorFactor: null,
+        },
+        {
+          diffuseColor: null,
+        },
+        {
+          normal: 'Teeth_normal',
+        },
+        {
+          metallicFactor: 0.050000000000000003,
+        },
+        {
+          roughnessFactor: 0.95243199999999995,
+        },
+        {
+          specularFactor: null,
+        },
+        {
+          glossinessFactor: null,
+        },
+        {
+          specularGlossiness: null,
+        },
+        {
+          specularGlossinessCalculation: null,
+        },
+        {
+          metallicRoughness: null,
+        },
+        {
+          occlusion: null,
+        },
+        {
+          emissiveFactor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          emissive: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/captain_america/captain_america.gltf',
+    name: 'captain_america',
+    recenter: 'root',
+    scale: 0.026984999999999999,
+  },
+  samplers: [
+    {
+      file: 'sampledata/captain_america\\textures\\Lashes_baseColor.png',
+      name: 'Lashes_baseColor',
+      pipeline_name: 'textures/Lashes_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Helmet_baseColor.png',
+      name: 'Helmet_baseColor',
+      pipeline_name: 'textures/Helmet_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Lashes_normal.png',
+      name: 'Lashes_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Lashes_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\material_baseColor.png',
+      name: 'material_baseColor',
+      pipeline_name: 'textures/material_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Face_baseColor.png',
+      name: 'Face_baseColor',
+      pipeline_name: 'textures/Face_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Face_normal.png',
+      name: 'Face_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Face_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Lower_Body_baseColor.png',
+      name: 'Lower_Body_baseColor',
+      pipeline_name: 'textures/Lower_Body_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Teeth_baseColor.png',
+      name: 'Teeth_baseColor',
+      pipeline_name: 'textures/Teeth_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\material_normal.png',
+      name: 'material_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/material_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Lower_Body_normal.png',
+      name: 'Lower_Body_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Lower_Body_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Helmet_normal.png',
+      name: 'Helmet_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Helmet_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Upper_Body_baseColor.png',
+      name: 'Upper_Body_baseColor',
+      pipeline_name: 'textures/Upper_Body_baseColor.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Upper_Body_normal.png',
+      name: 'Upper_Body_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Upper_Body_normal.png',
+    },
+    {
+      file: 'sampledata/captain_america\\textures\\Teeth_normal.png',
+      name: 'Teeth_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures/Teeth_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}
