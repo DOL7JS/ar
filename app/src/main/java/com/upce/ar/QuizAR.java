@@ -40,6 +40,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
+import static com.upce.ar.LibraryAR.checkIsSupportedDeviceOrFinish;
+
 public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener {
 
     private ArFragment arCoreFragment;
@@ -72,6 +74,10 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_ar);
+        if(!checkIsSupportedDeviceOrFinish(this)){
+            startActivity(new Intent(getApplicationContext(), ModelSelection.class));
+            return;
+        }
         LibraryAR.isLibraryAR = false;
         arCoreFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
         arCoreFragment.getArSceneView().getScene().addOnUpdateListener(this);
@@ -223,7 +229,7 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, answerList);
         listViewAnswers.setAdapter(arrayAdapter);
     }
- 
+
     private float getMaxScaleActualModel(String modelName) {
         for (int i = 0; i < models.size(); i++) {
             if (models.get(i).getModelName().equals(modelName)) {

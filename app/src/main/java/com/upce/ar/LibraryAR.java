@@ -1,8 +1,12 @@
 package com.upce.ar;
 
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.view.View;
@@ -39,12 +43,17 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
     public static boolean isLibraryAR = false;
     private ArFragment arCoreFragment;
     private static Model model;
+    static int  MIN_OPENGL_VERSION = 3;
     HashMap<String, String> superhero_info = new HashMap<String, String>();
 
     @RequiresApi(api = VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(!checkIsSupportedDeviceOrFinish(this)){
+            startActivity(new Intent(getApplicationContext(), ModelSelection.class));
+            return;
+        }
         setContentView(R.layout.library_ar);
         isLibraryAR = true;
         arCoreFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
@@ -183,4 +192,19 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
     public static void setModel(Model models) {
         LibraryAR.model = models;
     }
+
+    public static boolean checkIsSupportedDeviceOrFinish(final Activity activity) {
+        String openGlVersionString =
+                ((ActivityManager) activity.getSystemService(Context.ACTIVITY_SERVICE))
+                        .getDeviceConfigurationInfo()
+                        .getGlEsVersion();
+        if (Double.parseDouble(openGlVersionString) < MIN_OPENGL_VERSION) {
+            Toast.makeText(activity, "Sceneform requires OpenGL ES 3.0 or later", Toast.LENGTH_LONG)
+                    .show();
+            //activity.finish();
+            return false;
+        }
+        return true;
+    }
+
 }
