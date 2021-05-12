@@ -4,12 +4,12 @@
     package="com.upce.ar">
 
     <uses-permission android:name="android.permission.CAMERA" />
-
+    <queries>
+        <package android:name="com.google.ar"/>
+    </queries>
     <uses-feature
         android:name="android.hardware.camera.ar"
         android:required="true" />
-
-
 
     <application
         android:allowBackup="true"
@@ -39,19 +39,29 @@
 
         <activity
             android:name=".QuizAR"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"
+            />
         <activity
             android:name=".QuizWelcome"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"
+            />
         <activity
             android:name=".ModelSelection"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"
+            />
         <activity
             android:name=".LibraryAR"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"
+            />
         <activity
             android:name=".AboutApp"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="locked"
+            />
 
 
     </application>

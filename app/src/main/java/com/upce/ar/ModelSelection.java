@@ -64,7 +64,7 @@ public class ModelSelection extends AppCompatActivity {
     private void loadModels() {
         listViewModels.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         modelList = new ArrayList<>();
-        modelList.add(new Model("Iron man", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("iron_man", getApplicationContext()), 0.035f, "iron_man"));
+        modelList.add(new Model("Iron man", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("iron_man", getApplicationContext()), 0.08f, "iron_man"));
         modelList.add(new Model("Hulk", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("hulk", getApplicationContext()), 0.1f, "hulk"));
         modelList.add(new Model("Spiderman", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("spiderman", getApplicationContext()), 0.04f, "spiderman"));
         modelList.add(new Model("Batman", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("batman", getApplicationContext()), 0.09f, "batman"));
@@ -73,12 +73,13 @@ public class ModelSelection extends AppCompatActivity {
         modelList.add(new Model("Captain America", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_america", getApplicationContext()), 0.03f, "captain_america"));
         modelList.add(new Model("Black panther - náhrdelník", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("black_panther_necklace", getApplicationContext()), 0.35f, "black_panther_necklace"));
         modelList.add(new Model("Captain America - štít", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_america_shield", getApplicationContext()), 0.1f, "captain_america_shield"));
-        modelList.add(new Model("Captain Marvel", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_marvel", getApplicationContext()), 0.1f, "captain_marvel"));
+     //   modelList.add(new Model("Captain Marvel", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_marvel", getApplicationContext()), 0.1f, "captain_marvel"));
         modelList.add(new Model("Mjolnir", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("mjolnir", getApplicationContext()), 0.04f, "mjolnir"));
         modelList.add(new Model("Starlordova helma", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("star_lord_helmet", getApplicationContext()), 0.15f, "star_lord_helmet"));
         modelList.add(new Model("Shazam", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("shazam", getApplicationContext()), 0.1f, "shazam"));
         modelList.add(new Model("Spider Gwen", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("spider_gwen", getApplicationContext()), 0.03f, "spider_gwen"));
         modelList.add(new Model("Storm breaker", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("storm_breaker", getApplicationContext()), 0.02f, "storm_breaker"));
+        modelList.add(new Model("Vision", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("vision", getApplicationContext()), 0.09f, "vision"));
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_single_choice, modelList);
         listViewModels.setAdapter(arrayAdapter);

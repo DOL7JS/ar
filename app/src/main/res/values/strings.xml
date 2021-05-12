@@ -1,22 +1,13 @@
 <resources>
     <string name="app_name">ArCoreBaka</string>
-    <string name="back">BACK</string>
-    <string name="spustit_ar">Spustit AR</string>
     <string name="v_b_r_modelu">Výběr modelu</string>
-    <string name="model_nevybr_n">Model nevybrán</string>
     <string name="zobrazit">zobrazit</string>
-    <string name="zru_it_v_e">Zrušit vše</string>
-    <string name="vybrat_v_e">Vybrat vše</string>
-    <string name="delete">delete</string>
-    <string name="pokra_ovat">Pokračovat</string>
     <string name="v_tejte_v_kv_zu_o_superhrdinech">Vítejte v kvízu o superhrdinech</string>
     <string name="ukon_it">Ukončit</string>
     <string name="odpov_di">Odpovědi</string>
     <string name="potvrdit">Potvrdit</string>
     <string name="ot_zka">Otázka</string>
-    <string name="otev_t_knihovnu">Otevřít knihovnu</string>
     <string name="spustit_kv_z">Spustit kvíz</string>
-    <string name="superhrdinov">Superhrdinové</string>
     <string name="info">info</string>
     <string name="zp_t">Zpět</string>
     <string name="tato_aplikace_byla_zhotovena_jako_praktick_st_bakal_sk_pr_ce_na_t_ma_n_vrh_a_realizace_mobiln_aplikace_vyu_vaj_c_roz_enou_realitu_kterou_realizoval_petr_dolej">Tato aplikace byla zhotovena jako praktická část bakalářské práce na téma Návrh a realizace mobilní aplikace využívající rozšířenou realitu, kterou realizoval Petr Dolejš.</string>

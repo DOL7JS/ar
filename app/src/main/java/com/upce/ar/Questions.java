@@ -32,7 +32,7 @@ class Questions {
         superhero_names.add("Iron Man");
         superhero_names.add("Captain America");
         superhero_names.add("Hulk");
-        superhero_names.add("Black Panther");
+        superhero_names.add("Black panther");
         superhero_names.add("Captain Marvel");
         superhero_names.add("Shazam");
         superhero_names.add("Spider man");
@@ -41,6 +41,7 @@ class Questions {
         superhero_names.add("Batman");
         superhero_names.add("Starlord");
         superhero_names.add("Thor");
+        superhero_names.add("Vision");
 
         superhero_equipment = new ArrayList<>();
         superhero_equipment.add("Mjolnir");
@@ -59,6 +60,8 @@ class Questions {
         superhero_creators.add("Stan Lee a Steve Ditko");
         superhero_creators.add("Steve Englehart a Steve Gan");
         superhero_creators.add("Jerry Siegel a Joe Shuster");
+        superhero_creators.add("Roy Thomas a John Buscema");
+
 
         superhero_years = new ArrayList<>();
         superhero_years.add("2008");
@@ -71,6 +74,7 @@ class Questions {
         superhero_years.add("1978");
         superhero_years.add("1966");
         superhero_years.add("2014");
+        superhero_years.add("2015");
 
         questionList = new ArrayList<>();
         //heroes
@@ -82,7 +86,7 @@ class Questions {
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Spider man", "spiderman", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Peter Parker", "spiderman", EnumQuestionType.REAL_NAME));
         questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Stan Lee a Steve Ditko", "spiderman", EnumQuestionType.CREATOR));
-        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2002", "spíderman", EnumQuestionType.FIRST_APPEARANCE_YEAR));
+        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2002", "spiderman", EnumQuestionType.FIRST_APPEARANCE_YEAR));
 
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Black panther", "black_panther", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "T'Challa", "black_panther", EnumQuestionType.REAL_NAME));
@@ -91,14 +95,14 @@ class Questions {
 
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Captain America", "captain_america", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Steve Rogers", "captain_america", EnumQuestionType.REAL_NAME));
-        questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Joe Simon a Jack Kirb", "captain_america", EnumQuestionType.CREATOR));
+        questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Joe Simon a Jack Kirby", "captain_america", EnumQuestionType.CREATOR));
         questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2011", "captain_america", EnumQuestionType.FIRST_APPEARANCE_YEAR));
 
-        questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Captain Marvel", "captain_marvel", EnumQuestionType.SUPERHERO_NAME));
-        questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Carol Danvers", "captain_marvel", EnumQuestionType.REAL_NAME));
-        questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Roy Thomas a Gene Colan", "captain_marvel", EnumQuestionType.CREATOR));
-        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2019", "captain_marvel", EnumQuestionType.FIRST_APPEARANCE_YEAR));
-
+        //questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Captain Marvel", "captain_marvel", EnumQuestionType.SUPERHERO_NAME));
+        //questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Carol Danvers", "captain_marvel", EnumQuestionType.REAL_NAME));
+        //questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Roy Thomas a Gene Colan", "captain_marvel", EnumQuestionType.CREATOR));
+        //questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2019", "captain_marvel", EnumQuestionType.FIRST_APPEARANCE_YEAR));
+//
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Hulk", "hulk", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Bruce Banner", "hulk", EnumQuestionType.REAL_NAME));
         questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Stan Lee a Jack Kirby", "hulk", EnumQuestionType.CREATOR));
@@ -119,11 +123,16 @@ class Questions {
         questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Bob Kane a Bill Finger", "batman", EnumQuestionType.CREATOR));
         questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "1966", "batman", EnumQuestionType.FIRST_APPEARANCE_YEAR));
 
+        questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Vision", "vision", EnumQuestionType.SUPERHERO_NAME));
+        questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Roy Thomas a John Buscema", "vision", EnumQuestionType.CREATOR));
+        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2015", "vision", EnumQuestionType.FIRST_APPEARANCE_YEAR));
+
+
         //equipment
         questionList.add(new Question("Kterému hrdinovi patří zobrazený objekt?", "Batman", "batarang", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje zobrazený objekt?", "Batarang", "batarang", EnumQuestionType.MOVIE_OBJECT));
 
-        questionList.add(new Question("Kterému hrdinovi patří zobrazený objekt?", "Black Panther", "black_panther_necklace", EnumQuestionType.SUPERHERO_NAME));
+        questionList.add(new Question("Kterému hrdinovi patří zobrazený objekt?", "Black panther", "black_panther_necklace", EnumQuestionType.SUPERHERO_NAME));
 
         questionList.add(new Question("Kterému hrdinovi patří zobrazený objekt?", "Captain America", "captain_america_shield", EnumQuestionType.SUPERHERO_NAME));
 
@@ -147,7 +156,7 @@ class Questions {
         if (q.isEmpty()) {
             return null;
         }
-        return q.get(rand.nextInt(q.size() - 1));
+        return q.get(rand.nextInt(q.size()));
     }
 
     int getCountQuestions() {

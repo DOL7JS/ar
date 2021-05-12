@@ -68,13 +68,14 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
     TextView textViewPoints;
     boolean endOfQuiz = false;
     int numberOfQuestion = 10;
+
     @SuppressLint("SetTextI18n")
     @RequiresApi(api = VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_ar);
-        if(!checkIsSupportedDeviceOrFinish(this)){
+        if (!checkIsSupportedDeviceOrFinish(this)) {
             startActivity(new Intent(getApplicationContext(), ModelSelection.class));
             return;
         }
@@ -135,19 +136,23 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
                 return;
             }
             question.setAlreadyAnswered(true);
-            question.addAttempts();
+            if (question.getAttempts() < 4) {
+                question.addAttempts();
+            }
             if (answerIsCorrect()) {
                 listViewAnswers.setVisibility(View.GONE);
                 Score.addScore(4 - question.getAttempts());
                 NextQuestionLayoutVisible();
-                generateNewRandomQuestion();
-                List<Node> nodes = arCoreFragment.getArSceneView().getScene().getChildren();
-                while (nodes.size() > 2) {
-                    nodes.get(2).setEnabled(false);
-                    for (int i = 0; i < models.size(); i++) {
-                        models.get(i).setIsPlaced(false);
+                if (questions.getCountQuestions() != numberOfQuestion) {
+                    generateNewRandomQuestion();
+                    List<Node> nodes = arCoreFragment.getArSceneView().getScene().getChildren();
+                    while (nodes.size() > 2) {
+                        nodes.get(2).setEnabled(false);
+                        for (int i = 0; i < models.size(); i++) {
+                            models.get(i).setIsPlaced(false);
+                        }
+                        arCoreFragment.getArSceneView().getScene().removeChild(nodes.get(2));
                     }
-                    arCoreFragment.getArSceneView().getScene().removeChild(nodes.get(2));
                 }
             } else {
                 Toast.makeText(this, "Zkus to znovu", Toast.LENGTH_SHORT).show();
@@ -218,11 +223,13 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
     private void generateNewRandomQuestion() {
 
         Questions.Question newQuestion = questions.getRandomQuestion();
+
         if (newQuestion != null) {
             setQuestion(newQuestion);
         } else {
             Toast.makeText(this, "Vyčerpal jste otázky", Toast.LENGTH_LONG).show();
             startActivity(new Intent(getApplicationContext(), HomeScreen.class));
+            return;
         }
         actualModel = newQuestion.getModel();
         labelQuestion.setText(newQuestion.getQuestion());
@@ -316,7 +323,7 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
 
     public void setModels() {
         models = new ArrayList<>();
-        models.add(new Model("iron_man", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("iron_man", getApplicationContext()), 0.035f));
+        models.add(new Model("iron_man", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("iron_man", getApplicationContext()), 0.08f));
         models.add(new Model("hulk", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("hulk", getApplicationContext()), 0.1f));
         models.add(new Model("spiderman", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("spiderman", getApplicationContext()), 0.04f));
         models.add(new Model("batman", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("batman", getApplicationContext()), 0.1f));
@@ -325,12 +332,13 @@ public class QuizAR extends AppCompatActivity implements Scene.OnUpdateListener 
         models.add(new Model("captain_america", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_america", getApplicationContext()), 0.03f));
         models.add(new Model("black_panther_necklace", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("black_panther_necklace", getApplicationContext()), 0.35f));
         models.add(new Model("captain_america_shield", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_america_shield", getApplicationContext()), 0.1f));
-        models.add(new Model("captain_marvel", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("captain_marvel", getApplicationContext()), 0.1f));
         models.add(new Model("mjolnir", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("mjolnir", getApplicationContext()), 0.04f));
         models.add(new Model("star_lord_helmet", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("star_lord_helmet", getApplicationContext()), 0.15f));
         models.add(new Model("shazam", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("shazam", getApplicationContext()), 0.1f));
         models.add(new Model("spider_gwen", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("spider_gwen", getApplicationContext()), 0.03f));
         models.add(new Model("storm_breaker", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("storm_breaker", getApplicationContext()), 0.02f));
+        models.add(new Model("vision", false, "qrcodeuniverzal.png", Model.getIdOf3DModel("vision", getApplicationContext()), 0.09f));
+
     }
 
 }

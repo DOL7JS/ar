@@ -13,6 +13,8 @@ public class CustomArFragment extends ArFragment {
         getPlaneDiscoveryController().setInstructionView(null);
         Config config = new Config(session);
         config.setUpdateMode(Config.UpdateMode.LATEST_CAMERA_IMAGE);
+        config.setFocusMode(Config.FocusMode.AUTO);
+
         session.configure(config);
         getArSceneView().setupSession(session);
 
@@ -20,13 +22,13 @@ public class CustomArFragment extends ArFragment {
             if ((((LibraryAR) getActivity()).buildDatabase(config, session))) {
                 Log.d("SetupAugImgDb", "Success");
             } else {
-                Toast.makeText(getContext(), " SetupAugImgDb -- Faliure setting up db", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), " SetupAugImgDb -- Failure setting up db", Toast.LENGTH_LONG).show();
             }
         } else {
             if ((((QuizAR) getActivity()).buildDatabase(config, session))) {
                 Log.d("SetupAugImgDb", "Success");
             } else {
-                Toast.makeText(getContext(), " SetupAugImgDb -- Faliure setting up db", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), " SetupAugImgDb -- Failure setting up db", Toast.LENGTH_LONG).show();
             }
         }
 

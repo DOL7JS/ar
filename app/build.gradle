@@ -31,6 +31,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation "com.google.ar.sceneform.ux:sceneform-ux:1.12.0"
+    implementation 'com.google.ar:core:1.23.0'
     implementation 'com.karumi:dexter:5.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
 
@@ -51,10 +52,6 @@ sceneform.asset('sampledata/hulk/hulk.gltf',
         'sampledata/hulk/hulk.sfa',
         'src/main/res/raw/hulk')
 
-sceneform.asset('sampledata/iron_man/iron_man.gltf',
-        'default',
-        'sampledata/iron_man/iron_man.sfa',
-        'src/main/res/raw/iron_man')
 
 sceneform.asset('sampledata/spiderman/spiderman.gltf',
         'default',
@@ -82,10 +79,7 @@ sceneform.asset('sampledata/black_panther/black_panther.gltf',
         'sampledata/black_panther/black_panther.sfa',
         'src/main/res/raw/black_panther')
 
-sceneform.asset('sampledata/mjolnir/mjolnir.gltf',
-        'default',
-        'sampledata/mjolnir/mjolnir.sfa',
-        'src/main/res/raw/mjolnir')
+
 
 
 sceneform.asset('sampledata/shazam/shazam.gltf',
@@ -115,10 +109,18 @@ sceneform.asset('sampledata/star_lord_helmet/star_lord_helmet.gltf',
         'src/main/res/raw/star_lord_helmet')
 
 
-sceneform.asset('sampledata/superman/superman.gltf',
+sceneform.asset('sampledata/vision/vision.gltf',
         'default',
-        'sampledata/superman/superman.sfa',
-        'src/main/res/raw/superman')
+        'sampledata/vision/vision.sfa',
+        'src/main/res/raw/vision')
+
+
+
+sceneform.asset('sampledata/iron_man/iron_man.gltf',
+        'default',
+        'sampledata/iron_man/iron_man.sfa',
+        'src/main/res/raw/iron_man')
+
 
 
 
@@ -126,3 +128,8 @@ sceneform.asset('sampledata/batman/batman.gltf',
         'default',
         'sampledata/batman/batman.sfa',
         'src/main/res/raw/batman')
+
+sceneform.asset('sampledata/mjolnir/mjolnir.gltf',
+        'default',
+        'sampledata/mjolnir/mjolnir.sfa',
+        'src/main/res/raw/mjolnir')

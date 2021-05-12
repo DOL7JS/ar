@@ -54,6 +54,8 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
             startActivity(new Intent(getApplicationContext(), ModelSelection.class));
             return;
         }
+
+
         setContentView(R.layout.library_ar);
         isLibraryAR = true;
         arCoreFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
@@ -85,12 +87,12 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
         superhero_info.put("Black panther", "Skutečné jméno: T'Challa\n" +
                 "Superhrdinské jméno: Black Panther\n" +
                 "Vytvořil: Stan Lee a Jack Kirby \n" +
-                "Schopnosti: síla, rychlost, technické vychytávky");
+                "Schopnosti: síla, rychlost, technické \nvychytávky");
         superhero_info.put("Black panther - náhrdelník", "Název: Náhrdelník\n" +
                 "Patří Black Pantherovi");
         superhero_info.put("Captain America", "Skutečné jméno: Steve Rogers\n" +
                 "Superhrdinské jméno: Captain America\n" +
-                "Vytvořil: Joe Simon a Jack Kirb \n" +
+                "Vytvořil: Joe Simon a Jack Kirby \n" +
                 "Schopnosti: síla, rychlost, vytrvalost");
         superhero_info.put("Captain America - štít", "Název: Štít\n" +
                 "Patří Kapitánu Amerikovi");
@@ -128,6 +130,11 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
                 "Superhrdinské jméno: Batman\n" +
                 "Vytvořil: Bob Kane a Bill Finger\n" +
                 "Schopnosti: mistr bojových umění,\n mistr zbraní, detektivní schopnosti");
+        superhero_info.put("Vision",
+                "Superhrdinské jméno: Vision\n" +
+                "Vytvořil: Roy Thomas a John Buscema\n" +
+                "Schopnosti: síla, létání, fázování");
+
     }
 
     public boolean buildDatabase(Config config, Session sessionIn) {
@@ -201,7 +208,6 @@ public class LibraryAR extends AppCompatActivity implements Scene.OnUpdateListen
         if (Double.parseDouble(openGlVersionString) < MIN_OPENGL_VERSION) {
             Toast.makeText(activity, "Sceneform requires OpenGL ES 3.0 or later", Toast.LENGTH_LONG)
                     .show();
-            //activity.finish();
             return false;
         }
         return true;

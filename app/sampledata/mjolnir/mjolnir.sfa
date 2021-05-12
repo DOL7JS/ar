@@ -1,7 +1,7 @@
 {
   materials: [
     {
-      name: 'None',
+      name: 'Scene_-_Root',
       parameters: [
         {
           baseColorFactor: [
@@ -12,7 +12,7 @@
           ],
         },
         {
-          baseColor: 'None_baseColor',
+          baseColor: 'Scene_-_Root_baseColor',
         },
         {
           diffuseColorFactor: null,
@@ -21,71 +21,7 @@
           diffuseColor: null,
         },
         {
-          normal: 'None_normal',
-        },
-        {
-          metallicFactor: 0,
-        },
-        {
-          roughnessFactor: 1,
-        },
-        {
-          specularFactor: null,
-        },
-        {
-          glossinessFactor: null,
-        },
-        {
-          specularGlossiness: null,
-        },
-        {
-          specularGlossinessCalculation: null,
-        },
-        {
-          metallicRoughness: 'None_metallicRoughness',
-        },
-        {
-          occlusion: null,
-        },
-        {
-          emissiveFactor: [
-            0,
-            0,
-            0,
-            1,
-          ],
-        },
-        {
-          emissive: null,
-        },
-        {
-          opacity: null,
-        },
-      ],
-      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
-    },
-    {
-      name: 'None.001',
-      parameters: [
-        {
-          baseColorFactor: [
-            1,
-            1,
-            1,
-            1,
-          ],
-        },
-        {
-          baseColor: 'None.001_baseColor',
-        },
-        {
-          diffuseColorFactor: null,
-        },
-        {
-          diffuseColor: null,
-        },
-        {
-          normal: 'None.001_normal',
+          normal: 'Scene_-_Root_normal',
         },
         {
           metallicFactor: 1,
@@ -106,135 +42,7 @@
           specularGlossinessCalculation: null,
         },
         {
-          metallicRoughness: 'None.001_metallicRoughness',
-        },
-        {
-          occlusion: null,
-        },
-        {
-          emissiveFactor: [
-            0,
-            0,
-            0,
-            1,
-          ],
-        },
-        {
-          emissive: null,
-        },
-        {
-          opacity: null,
-        },
-      ],
-      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
-    },
-    {
-      name: 'None.002',
-      parameters: [
-        {
-          baseColorFactor: [
-            1,
-            1,
-            1,
-            1,
-          ],
-        },
-        {
-          baseColor: 'None.002_baseColor',
-        },
-        {
-          diffuseColorFactor: null,
-        },
-        {
-          diffuseColor: null,
-        },
-        {
-          normal: 'None.002_normal',
-        },
-        {
-          metallicFactor: 1,
-        },
-        {
-          roughnessFactor: 1,
-        },
-        {
-          specularFactor: null,
-        },
-        {
-          glossinessFactor: null,
-        },
-        {
-          specularGlossiness: null,
-        },
-        {
-          specularGlossinessCalculation: null,
-        },
-        {
-          metallicRoughness: 'None.002_metallicRoughness',
-        },
-        {
-          occlusion: null,
-        },
-        {
-          emissiveFactor: [
-            0,
-            0,
-            0,
-            1,
-          ],
-        },
-        {
-          emissive: null,
-        },
-        {
-          opacity: null,
-        },
-      ],
-      source: 'build/sceneform_sdk/default_materials/gltf_material.sfm',
-    },
-    {
-      name: 'None.003',
-      parameters: [
-        {
-          baseColorFactor: [
-            1,
-            1,
-            1,
-            1,
-          ],
-        },
-        {
-          baseColor: 'None.003_baseColor',
-        },
-        {
-          diffuseColorFactor: null,
-        },
-        {
-          diffuseColor: null,
-        },
-        {
-          normal: 'None.003_normal',
-        },
-        {
-          metallicFactor: 1,
-        },
-        {
-          roughnessFactor: 1,
-        },
-        {
-          specularFactor: null,
-        },
-        {
-          glossinessFactor: null,
-        },
-        {
-          specularGlossiness: null,
-        },
-        {
-          specularGlossinessCalculation: null,
-        },
-        {
-          metallicRoughness: 'None.003_metallicRoughness',
+          metallicRoughness: 'Scene_-_Root_metallicRoughness',
         },
         {
           occlusion: null,
@@ -267,92 +75,29 @@
     file: 'sampledata/mjolnir/mjolnir.gltf',
     name: 'mjolnir',
     recenter: 'root',
-    scale: 0.38519300000000001,
+    scale: 0.0075079999999999999,
   },
   samplers: [
     {
-      file: 'sampledata/mjolnir\\textures\\None.001_metallicRoughness.png',
-      name: 'None.001_metallicRoughness',
+      file: 'sampledata/mjolnir\\textures\\Scene_-_Root_baseColor.png',
+      name: 'Scene_-_Root_baseColor',
+      pipeline_name: 'textures/Scene_-_Root_baseColor.png',
+    },
+    {
+      file: 'sampledata/mjolnir\\textures\\Scene_-_Root_metallicRoughness.png',
+      name: 'Scene_-_Root_metallicRoughness',
       params: {
         usage_type: 'Data',
       },
-      pipeline_name: 'textures/None.001_metallicRoughness.png',
+      pipeline_name: 'textures/Scene_-_Root_metallicRoughness.png',
     },
     {
-      file: 'sampledata/mjolnir\\textures\\None.002_baseColor.png',
-      name: 'None.002_baseColor',
-      pipeline_name: 'textures/None.002_baseColor.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None_baseColor.png',
-      name: 'None_baseColor',
-      pipeline_name: 'textures/None_baseColor.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.002_normal.png',
-      name: 'None.002_normal',
+      file: 'sampledata/mjolnir\\textures\\Scene_-_Root_normal.png',
+      name: 'Scene_-_Root_normal',
       params: {
         usage_type: 'Normal',
       },
-      pipeline_name: 'textures/None.002_normal.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.002_metallicRoughness.png',
-      name: 'None.002_metallicRoughness',
-      params: {
-        usage_type: 'Data',
-      },
-      pipeline_name: 'textures/None.002_metallicRoughness.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None_metallicRoughness.png',
-      name: 'None_metallicRoughness',
-      params: {
-        usage_type: 'Data',
-      },
-      pipeline_name: 'textures/None_metallicRoughness.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None_normal.png',
-      name: 'None_normal',
-      params: {
-        usage_type: 'Normal',
-      },
-      pipeline_name: 'textures/None_normal.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.001_baseColor.png',
-      name: 'None.001_baseColor',
-      pipeline_name: 'textures/None.001_baseColor.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.001_normal.png',
-      name: 'None.001_normal',
-      params: {
-        usage_type: 'Normal',
-      },
-      pipeline_name: 'textures/None.001_normal.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.003_baseColor.png',
-      name: 'None.003_baseColor',
-      pipeline_name: 'textures/None.003_baseColor.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.003_metallicRoughness.png',
-      name: 'None.003_metallicRoughness',
-      params: {
-        usage_type: 'Data',
-      },
-      pipeline_name: 'textures/None.003_metallicRoughness.png',
-    },
-    {
-      file: 'sampledata/mjolnir\\textures\\None.003_normal.png',
-      name: 'None.003_normal',
-      params: {
-        usage_type: 'Normal',
-      },
-      pipeline_name: 'textures/None.003_normal.png',
+      pipeline_name: 'textures/Scene_-_Root_normal.png',
     },
   ],
   version: '0.54:2',
