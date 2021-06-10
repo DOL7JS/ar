@@ -82,7 +82,7 @@ class Questions {
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Spider man", "spiderman", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "Peter Parker", "spiderman", EnumQuestionType.REAL_NAME));
         questionList.add(new Question("Kdo vytvořil zobrazeného superhrdinu?", "Stan Lee a Steve Ditko", "spiderman", EnumQuestionType.CREATOR));
-        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2002", "spíderman", EnumQuestionType.FIRST_APPEARANCE_YEAR));
+        questionList.add(new Question("V kterém roce se hrdina poprvé objevil ve \nfilmu?", "2002", "spiderman", EnumQuestionType.FIRST_APPEARANCE_YEAR));
 
         questionList.add(new Question("Jak se jmenuje zobrazený hrdina?", "Black panther", "black_panther", EnumQuestionType.SUPERHERO_NAME));
         questionList.add(new Question("Jak se jmenuje pravým jménem zobrazený \nhrdina?", "T'Challa", "black_panther", EnumQuestionType.REAL_NAME));
